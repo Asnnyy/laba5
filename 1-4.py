@@ -27,9 +27,7 @@ z3()
 def z4():
     l1 = ["pupkin", "petrov", "ivanov", "semenov", "kuznetsov", "smirnov", "popov", "sokolov","kozlov", "morozov"]
     l2 = ["volkov", "zaytsev", "pavlov", "tarasov", "belov", "orlov", "titov", "polyakov", "sidorov", "antonov"]
-    team1 = tuple(random.choice([l1]))
-    team2 = tuple(random.choice([l2]))
-    team0 = (team1[0:5] + team2[0:5])
+    team0 = (l1[0:5] + l2[0:5])
     d = len(team0)
     ts = sorted(team0)
     print(l1, l2, team0, d, ts)
